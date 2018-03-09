@@ -1,0 +1,492 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+header,
+main,
+article,
+footer,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: block;
+}
+
+html {
+  font-size: 100%;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/**
+ * Body
+ */
+
+body {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24;
+  line-height: 1.5rem;
+}
+
+.page {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 400;
+  background: #fafbfc;
+}
+
+/**
+ * Utils & body color
+ */
+
+.page,
+.color-primary,
+.color-primary:hover {
+  color: #333;
+}
+
+.color-secondary {
+  color: #aaa;
+}
+
+/**
+ * Gridly
+ */
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.col {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.col-third {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+}
+/**
+ * Container
+ */
+
+.container {
+  width: 53%;
+  margin: 0 auto;
+}
+
+.container .main {
+  margin-bottom: 3rem;
+}
+
+/**
+ * Links
+ */
+
+a {
+  text-decoration: none;
+}
+.link[href] {
+  color: #0366d6;
+}
+.link[href]:hover {
+  color: #0366d6;
+  text-decoration: none;
+}
+.link[href]:focus {
+  outline: none;
+}
+
+/**
+ * Header
+ */
+
+.container .header {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.container .header .header-title .tunnckocore {
+  display: none;
+  font-style: normal;
+  color: #333;
+}
+.container .header .header-title .charlike {
+  display: inline;
+}
+
+.container .header .header-title {
+  font-weight: 700;
+  /*   padding-bottom: 1rem; */
+
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 60;
+  line-height: 3.75rem;
+}
+
+.container .header .header-slogan {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 0.5rem;
+
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 39;
+  line-height: 2.4375rem;
+}
+
+/**
+ * Article
+ */
+
+.container .article {
+  margin-bottom: 3rem;
+}
+
+.container .article .article-title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 30;
+  line-height: 1.875rem;
+}
+.container .article .article-text {
+  text-align: justify;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 27;
+  line-height: 1.6875rem;
+}
+
+/**
+ * Footer
+ */
+
+.container .footer {
+  padding: 0.75rem 0;
+  border-top: 1px solid #aaa;
+}
+
+.container .footer .footer-left {
+  text-align: left;
+}
+
+.container .footer .footer-right {
+  text-align: right;
+}
+
+/*
+  100em - 1600px
+*/
+@media screen and (max-width: 100em) {
+  .container {
+    width: 55%;
+  }
+  .container .header .header-slogan {
+    width: 88%;
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 39;
+    line-height: 2.4375rem;
+  }
+  .container .article .article-title {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 30;
+    line-height: 1.875rem;
+  }
+  .container .article .article-text {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 27;
+    line-height: 1.6875rem;
+  }
+}
+
+@media screen and (min-width: 64em) and (max-width: 100em) {
+  .container {
+    width: 65%;
+  }
+}
+/*
+  48em - 786px
+  64em - 1024px
+  80em - 1280px
+  85.375em - 1366px
+  100em - 1600px
+  105em - 1680px
+  120em - 1920px
+*/
+
+@media (max-width: 48em) {
+  .container {
+    width: 85%;
+  }
+  .container .header .header-slogan {
+    width: 85%;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 27;
+    line-height: 1.6875rem;
+  }
+  .container .header .header-title .tunnckocore {
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 39;
+    line-height: 2.4375rem;
+  }
+  .container .header .header-title .charlike {
+    display: none;
+  }
+  .container .footer .footer-right {
+    text-align: left;
+  }
+}
+@media (max-width: 64em) {
+  .container .footer .footer-right {
+    text-align: left;
+  }
+}
+@media (max-width: 37.5em) {
+  .container .article .article-title {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 30;
+    line-height: 1.875rem;
+  }
+  .container .footer,
+  .container .article .article-text {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 24;
+    line-height: 1.5rem;
+  }
+}
+
+/* 600 to 768 */
+@media (min-width: 37.5em) and (max-width: 48em) {
+  .container .header .header-slogan {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 30;
+    line-height: 1.875rem;
+  }
+  .container .article .article-title {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 33;
+    line-height: 2.0625rem;
+  }
+  .container .footer,
+  .container .article .article-text {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 27;
+    line-height: 1.6875rem;
+  }
+}
+
+/*
+  48em - 786px
+  64em - 1024px
+  80em - 1280px
+  85.375em - 1366px
+  100em - 1600px
+  105em - 1680px
+  120em - 1920px
+*/
+@media (max-width: 48em) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+
+/* specifically 800 to 1024 */
+@media (min-width: 50em) and (max-width: 64em) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .container {
+    width: 75%;
+  }
+  .container .header .header-slogan {
+    width: 90%;
+  }
+  .container .header .header-slogan,
+  .container .article .article-title {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 39;
+    line-height: 2.4375rem;
+  }
+  .container .footer,
+  .container .article .article-text {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 33;
+    line-height: 2.0625rem;
+  }
+}
+
+/*
+  Large screens
+  100em - 1600px
+  105em - 1680px
+  120em - 1920px
+*/
+@media screen and (min-width: 100em) and (max-width: 120em) {
+  .container .header .header-slogan {
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 42;
+    line-height: 2.625rem;
+  }
+  .container .article .article-title {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 36;
+    line-height: 2.25rem;
+  }
+  .container .footer,
+  .container .article .article-text {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 33;
+    line-height: 2.0625rem;
+  }
+}
+
+/*
+  Larger than
+  120em - 1920px
+*/
+@media screen and (min-width: 120em) {
+  .container .header .header-slogan {
+    width: 77%;
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 45;
+    line-height: 2.8125rem;
+  }
+  .container .article .article-title {
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 42;
+    line-height: 2.625rem;
+  }
+  .container .footer,
+  .container .article .article-text {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 39;
+    line-height: 2.4375rem;
+  }
+}
+
+@media screen and (min-width: 80em) and (max-width: 85.375em) {
+  .container {
+    width: 50%;
+  }
+  .container .article .article-title {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 36;
+    line-height: 2.25rem;
+  }
+  .container .footer,
+  .container .article .article-text {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 24;
+    line-height: 1.5rem;
+  }
+}
+
+/* between 1366px to 1600px screen (1440px) */
+@media screen and (min-width: 85.375em) and (max-width: 100em) {
+  .container .header .header-slogan {
+    width: 70%;
+  }
+  .container .article .article-title {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 33;
+    line-height: 2.0625rem;
+  }
+  .container .footer,
+  .container .article .article-text {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 27;
+    line-height: 1.6875rem;
+  }
+}
+@media screen and (width: 85.375em) {
+  .container .header .header-slogan {
+    width: 85%;
+  }
+}
+
+/* 1600px screen */
+@media screen and (min-width: 100em) and (max-width: 105em) {
+  .container {
+    width: 60%;
+  }
+  .container .header .header-slogan {
+    width: 75%;
+  }
+  .container .article .article-title {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 36;
+    line-height: 2.25rem;
+  }
+  .container .footer,
+  .container .article .article-text {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 30;
+    line-height: 1.875rem;
+  }
+}
