@@ -5,11 +5,11 @@
   "license": "Apache-2.0",
   "licenseStart": 2018,
   "scripts": {
-    "precommit": "git add --all",
+    "precommit": "git add --all && yarn build",
     "commit": "gitcommit -Ss",
     "dev": "parcel public/index.html",
     "prebuild": "rm -rf docs && mkdir docs && echo 'tunnckocore.com' > docs/CNAME",
-    "build": "NODE_ENV=production parcel build public/index.html --public-url / -d docs --no-minify",
+    "build": "NODE_ENV=production parcel build public/index.html --public-url / -d docs",
     "postbuild": "cp shared/* docs",
     "serve": "serve docs -p 1234"
   },
