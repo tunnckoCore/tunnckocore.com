@@ -22,7 +22,7 @@
   "devDependencies": {
     "gitcommit": "^1.0.6",
     "parcel-bundler": "^1.6.2",
-    "serve": "^6.5.2"
+    "serve": "^7.0.0"
   },
   "renovate": {
     "extends": "tunnckocore"
