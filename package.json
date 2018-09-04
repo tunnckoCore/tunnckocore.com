@@ -11,7 +11,7 @@
     "prebuild": "rm -rf docs && mkdir docs && echo 'tunnckocore.com' > docs/CNAME",
     "build": "NODE_ENV=production parcel build public/index.html --public-url / -d docs",
     "postbuild": "cp shared/* docs",
-    "serve": "serve docs -p 1234"
+    "serve": "serve docs"
   },
   "engines": {
     "node": ">=8.9",
