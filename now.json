@@ -1,0 +1,7 @@
+{
+  "public": true,
+  "alias": "tunnckocore.com",
+  "features": {
+    "cloud": "v2"
+  }
+}
